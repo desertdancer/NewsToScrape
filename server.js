@@ -80,6 +80,11 @@ mongoose.connect(mongodb_URI, { useNewUrlParser: true });
 // });
 
 // Route for grabbing a specific Article by id, populate it with it's note
+app.get("/",  function(req, res){
+res.render("index")
+
+
+})
 // app.get("/articles/:id", function(req, res) {
   // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
 //   db.Article.findOne({ _id: req.params.id })
